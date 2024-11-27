@@ -25,3 +25,39 @@ const msg = loginUserMsg("SDM");
 const msg1 = loginUserMsg();
 console.log(msg);
 console.log(msg1);
+
+// ******************************************************* //
+// variable argument
+
+// function calculateCartPrice(...num1) {
+//   return num1;
+// }
+function calculateCartPrice(val, val2, ...num1) {
+  return num1;
+}
+
+console.log(calculateCartPrice(5, 5, 8, 9, 44, 55, 22));
+
+
+// objects
+const user ={
+    productName:"Headphone",
+    price: 199
+}
+
+function handleObj(anyObj) {
+    console.log(`Username is ${anyObj.productName} and Price is ${anyObj.price}`);
+    
+}
+handleObj(user)
+
+//  arrays
+
+const myNewArr = [100, 200, 300, 400, 500]
+
+function returnSecondValue(getArray) {
+    return getArray[1]
+}
+
+console.log(returnSecondValue(myNewArr));
+console.log(returnSecondValue([100, 400, 500, 600, 700, 800]));
