@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM | Edit and Remove Element</title>
+  </head>
+  <body style="background-color: black; color: #fff">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    function addLang(langName) {
+      const newEle = document.createElement("li");
+      newEle.innerHTML = `${langName}`;
+      const parent = document.querySelector(".language");
+      parent.appendChild(newEle);
+    }
+    addLang("java");
+    addLang("python");
+
+    function addOptiLanguage(langName){
+        const newEle = document.createElement('li')
+        newEle.appendChild(document.createTextNode(langName))
+        const parent = document.querySelector('.language')
+        parent.appendChild(newEle)
+    }
+    addOptiLanguage('ruby')
+
+    // edit
+    const secLang = document.querySelector("li:nth-child(2)")
+    const newLi = document.createElement('li')
+    newLi.innerHTML ="typescript"
+    secLang.replaceWith(newLi)
+
+    // edit
+    const firstLang = document.querySelector("li:first-child")
+    firstLang.outerHTML = `<li>c</li>`
+
+    // remove
+    const lastLang = document.querySelector('li:last-child')
+    lastLang.remove()
+  </script>
+</html>
