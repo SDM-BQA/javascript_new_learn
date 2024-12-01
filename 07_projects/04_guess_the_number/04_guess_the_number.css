@@ -69,6 +69,7 @@
     margin-bottom: 1rem;
     font-size: 1.5rem;
     font-weight: 600;
+    text-align: center;
   }
   .footer {
     flex-direction: column;
@@ -76,6 +77,8 @@
   }
   .footer div {
     font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5rem;
   }
   .footer div span {
     font-weight: 600;
