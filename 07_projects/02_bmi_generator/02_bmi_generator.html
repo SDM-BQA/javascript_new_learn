@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BMI Generator</title>
     <link rel="stylesheet" href="./02_bmi_generator.css"/>
-    <script src="./02_bmi_generator.js"></script>
+    <script src="./02_bmi_generator.js" defer></script>
 </head>
 <body>
     <div class="content">
         <h1 class="center heading">BMI Calculator</h1>
-        <form class="form">
+        <form class="form" id="form">
             <div class="form-control">
                 <label for="height-in-cm">Height in CM</label>
                 <input type="number" name="height-in-cm" id="height"/>
@@ -19,9 +19,9 @@
                 <label for="height-in-cm">Weight in KG</label>
                 <input type="number" name="weight-in-kg" id="weight"/>
             </div>
-            <button type="submit">Calculate</button>
+            <button type="submit" id="btn">Calculate</button>
         </form>
-        <div class="result">Lorem, ipsum dolor.</div>
+        <div class="result" id="result">Enter value to get result</div>
         <div class="footer">
             <h3 class="center">BMI Weight Guide</h3>
             <p class="footer-note">Under Weight = Less than 18.6</p>
