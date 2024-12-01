@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .container {
+    width: 100%;
+    height: 80vh;
+    padding: 1rem;
+  }
+  .content {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 1.5rem;
+    flex-direction: column;
+  }
+  .heading {
+    margin: 2rem auto;
+    text-align: center;
+  }
+  #heading-head {
+    font-size: 1.8rem;
+    margin-bottom: 0.8rem;
+  }
+  .heading-para {
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  #form {
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  #form h2 {
+    font-size: 2.5rem;
+  }
+  #form #num {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.5rem;
+    text-align: center;
+    outline: none;
+    border: 1px solid blue;
+  }
+  #form #num:focus {
+    border: 1px solid green;
+  }
+  #btn {
+    padding: 0.9rem 0.7rem;
+    font-size: 1rem;
+    cursor: pointer;
+    outline: none;
+    font-weight: 600;
+    background-color: blue;
+    border: none;
+    color: aliceblue;
+    border-radius: 0.5rem;
+  }
+  #btn:hover {
+    background-color: green;
+  }
+  #result {
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer div {
+    font-size: 1.2rem;
+  }
+  .footer div span {
+    font-weight: 600;
+  }
